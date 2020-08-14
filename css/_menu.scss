@@ -1,5 +1,5 @@
 header {
-    background-color:#343A40;
+    background-color: $cinza-escuro;
     padding: 10px 0px;
 }
 
@@ -14,7 +14,7 @@ header {
     }
     a {
         text-decoration: none;
-        color: #ffffff;
+        color: $cinza-claro;
         padding-left: 15px;   
     }
 }

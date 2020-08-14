@@ -278,7 +278,7 @@ header {
 
 .menu a {
   text-decoration: none;
-  color: #ffffff;
+  color: #f2f4f7;
   padding-left: 15px;
 }
 
@@ -337,7 +337,7 @@ footer {
   background-color: #343A40;
   text-align: center;
   font-family: Venn;
-  color: #FFFFFF;
+  color: #f2f4f7;
   margin-top: 100px;
   position: absolute;
   bottom: 0;
@@ -394,7 +394,7 @@ footer {
   border-radius: 1em;
   background: #343A40;
   padding: 10px 30px;
-  color: #FFFFFF;
+  color: #f2f4f7;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -412,19 +412,21 @@ footer {
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
-  border: solid 2px gray;
+  border: solid 2px #343A40;
   font-family: Venn;
 }
 
 .tabela th {
   padding: 10px 0px;
-  border: solid 2px gray;
+  border: solid 2px #343A40;
   font-weight: bold;
   text-transform: uppercase;
+  background-color: #343A40;
+  color: #f2f4f7;
 }
 
 .tabela td {
-  border: solid 2px gray;
+  border: solid 2px #343A40;
   padding: 5px 0px;
 }
 /*# sourceMappingURL=style.css.map */

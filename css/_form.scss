@@ -41,11 +41,11 @@ background-color: #F2F4F6;
 }
 
 .btn {
-    border: 3px solid #343A40;
+    border: 3px solid $cinza-escuro;
     border-radius: 1em;
-    background: #343A40;
+    background: $cinza-escuro;
     padding: 10px 30px;
-    color: $branco;
+    color: $cinza-claro;
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;

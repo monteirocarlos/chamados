@@ -1,5 +1,5 @@
 .painel {
-    background-color: #f2f4f7;
+    background-color: $cinza-claro;
     height: 70px;
     display: inline-block;
     margin-top: 60px;
@@ -11,7 +11,7 @@
 }
 
 .painel:hover {
-    background-color:#DEDEDE;
+    background-color: $cinza-medio;
 }
 
 .painel_texto {
@@ -19,7 +19,7 @@
     margin-top: 18px;
     font-family: Venn;
     p{
-        color: #343A40;
+        color: $cinza-escuro;
         font-weight: bold;
     }
     

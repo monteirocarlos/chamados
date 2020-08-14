@@ -8,17 +8,19 @@ margin-top: 60px;
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    border: solid 2px gray;
+    border: solid 2px $cinza-escuro;
     font-family: Venn;
-    th{
+    th {
         padding: 10px 0px;
-        border: solid 2px gray;
+        border: solid 2px $cinza-escuro;
         font-weight: bold;
         text-transform: uppercase;
+        background-color: $cinza-escuro;
+        color: $cinza-claro ;
         
     }
     td {
-        border: solid 2px gray;
+        border: solid 2px $cinza-escuro;
         padding: 5px 0px;
     }
 }
