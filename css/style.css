@@ -261,6 +261,7 @@ table {
 
 header {
   background-color: #343A40;
+  padding: 10px 0px;
 }
 
 .menu {
@@ -299,15 +300,14 @@ header {
 }
 
 .painel {
-  background-color: #F2F4F6;
+  background-color: #f2f4f7;
   height: 70px;
   display: inline-block;
   margin-top: 60px;
-  border: solid 1px #343A40;
 }
 
 .painel img {
-  margin-top: 20px;
+  margin-top: 17px;
   width: 32px;
   height: 32px;
 }
@@ -325,6 +325,10 @@ header {
 .painel_texto p {
   color: #343A40;
   font-weight: bold;
+}
+
+.painel_geral a {
+  text-decoration: none;
 }
 
 footer {
@@ -416,6 +420,7 @@ footer {
   padding: 10px 0px;
   border: solid 2px gray;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .tabela td {

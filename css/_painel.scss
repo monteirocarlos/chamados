@@ -1,13 +1,12 @@
 .painel {
-    background-color: #F2F4F6;
+    background-color: #f2f4f7;
     height: 70px;
     display: inline-block;
     margin-top: 60px;
-    border: solid 1px #343A40;
     img {
-        margin-top: 20px;
+        margin-top: 17px;
         width: 32px;
-        height: 32px;
+        height: 32px; 
     }
 }
 
@@ -25,3 +24,8 @@
     }
     
 }
+ .painel_geral {
+     a  {
+         text-decoration: none;
+     }
+ }
