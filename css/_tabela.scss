@@ -1,0 +1,23 @@
+.tabela_geral {
+background-color: #F2F4F6;
+margin-top: 60px;
+
+}
+
+.tabela {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: solid 2px gray;
+    font-family: Venn;
+    th{
+        padding: 10px 0px;
+        border: solid 2px gray;
+        font-weight: bold;
+        
+    }
+    td {
+        border: solid 2px gray;
+        padding: 5px 0px;
+    }
+}

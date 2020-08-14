@@ -293,8 +293,9 @@ header {
   font-size: 64px;
   text-align: center;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Venn;
   color: #343A40;
+  font-weight: bold;
 }
 
 .painel {
@@ -396,5 +397,29 @@ footer {
   font-weight: bold;
   letter-spacing: .1em;
   margin-bottom: 10px;
+}
+
+.tabela_geral {
+  background-color: #F2F4F6;
+  margin-top: 60px;
+}
+
+.tabela {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  border: solid 2px gray;
+  font-family: Venn;
+}
+
+.tabela th {
+  padding: 10px 0px;
+  border: solid 2px gray;
+  font-weight: bold;
+}
+
+.tabela td {
+  border: solid 2px gray;
+  padding: 5px 0px;
 }
 /*# sourceMappingURL=style.css.map */
