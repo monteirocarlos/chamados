@@ -1,12 +1,24 @@
+header {
+    background-color:#343A40;
+}
+
 .menu {
     display: flex;
+    
     li{
         margin-left: 10px;
-        padding-top: 20px;
+        padding-top: 22px;
+        font-family: Venn;
+         
+    }
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        padding-left: 15px;   
     }
 }
 
 .menu_logo {
-    width: 220px;
+    height: 60px;
    
 }

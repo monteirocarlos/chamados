@@ -3,9 +3,19 @@
     height: 70px;
     display: inline-block;
     margin-top: 60px;
-    p {
-        text-align: center;
-        margin-top: 27px;
+    img {
+        margin-top: 20px;
+        width: 32px;
+        height: 32px;
     }
 }
 
+.painel_texto {
+    text-align: left;
+    margin-top: 18px;
+    font-family: Venn;
+    p{
+        color: #ffff;
+    }
+    
+}
