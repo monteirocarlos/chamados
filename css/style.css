@@ -210,12 +210,12 @@ table {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1400px;
   margin: 0px auto;
   position: relative;
 }
 
-@media screen and (min-width: 760px) and (max-width: 959px) {
+@media screen and (min-width: 760px) and (max-width: 1399px) {
   .container {
     max-width: 760px;
   }
@@ -304,7 +304,8 @@ footer {
   text-align: center;
   font-family: Venn;
   color: #FFFFFF;
-  margin-top: 50px;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer_texto {
