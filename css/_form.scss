@@ -1,0 +1,31 @@
+.form_geral {
+margin-top: 60px;
+text-align: center;
+}
+
+.form_ind {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Venn;
+    font-weight: bold;
+    input{
+        height: 30px;
+        width: 100%;
+        border: solid 1px gray;
+        margin-top: 10px;
+    }
+    textarea {
+        width: 100%;
+        height: 90px;
+        border: solid 1px gray;
+        margin-top: 10px;
+    }
+}
+
+.form_ind {
+    select {
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+    }
+}
