@@ -1,8 +1,9 @@
 .painel {
-    background-color: green;
+    background-color: #F2F4F6;
     height: 70px;
     display: inline-block;
     margin-top: 60px;
+    border: solid 1px #343A40;
     img {
         margin-top: 20px;
         width: 32px;
@@ -10,12 +11,16 @@
     }
 }
 
+.painel:hover {
+    background-color:#A4A4A4;
+}
+
 .painel_texto {
     text-align: left;
     margin-top: 18px;
     font-family: Venn;
     p{
-        color: #ffff;
+        color: #343A40;
     }
     
 }
