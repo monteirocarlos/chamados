@@ -260,7 +260,7 @@ table {
 }
 
 header {
-  background-color: #343A40;
+  background-color: #2D4F8D;
   padding: 10px 0px;
 }
 
@@ -288,15 +288,14 @@ header {
 
 .titulo {
   margin-top: 100px;
+  font-weight: bold;
 }
 
 .titulo h1 {
   font-size: 64px;
   text-align: center;
-  font-weight: bold;
   font-family: Venn;
-  color: #343A40;
-  font-weight: bold;
+  color: #2D4F8D;
 }
 
 .painel {
@@ -323,7 +322,7 @@ header {
 }
 
 .painel_texto p {
-  color: #343A40;
+  color: #2D4F8D;
   font-weight: bold;
 }
 
@@ -334,7 +333,7 @@ header {
 footer {
   width: 100%;
   height: 60px;
-  background-color: #343A40;
+  background-color: #2D4F8D;
   text-align: center;
   font-family: Venn;
   color: #f2f4f7;
@@ -350,7 +349,7 @@ footer {
 .form_geral {
   margin-top: 60px;
   text-align: center;
-  background-color: #F2F4F6;
+  background-color: #DEDEDE;
 }
 
 .form_ind {
@@ -364,17 +363,19 @@ footer {
 .form_ind input {
   height: 30px;
   width: 100%;
-  border: solid 1px gray;
+  border: none;
   margin-top: 10px;
+  background-color: #f2f4f7;
 }
 
 .form_ind textarea {
   width: 100%;
   height: 90px;
-  border: solid 1px gray;
+  border: none;
   margin-top: 10px;
   font-family: Venn;
   font-size: 18px;
+  background-color: #f2f4f7;
 }
 
 .form_ind select {
@@ -383,6 +384,8 @@ footer {
   margin-top: 10px;
   font-family: Venn;
   font-size: 16px;
+  border: 1px solid #DEDEDE;
+  background-color: #f2f4f7;
 }
 
 .botao {
@@ -390,9 +393,9 @@ footer {
 }
 
 .btn {
-  border: 3px solid #343A40;
+  border: 3px solid #2D4F8D;
   border-radius: 1em;
-  background: #343A40;
+  background: #2D4F8D;
   padding: 10px 30px;
   color: #f2f4f7;
   font-size: 14px;
@@ -412,21 +415,21 @@ footer {
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
-  border: solid 2px #343A40;
+  border: solid 2px #2D4F8D;
   font-family: Venn;
 }
 
 .tabela th {
   padding: 10px 0px;
-  border: solid 2px #343A40;
+  border: solid 2px #2D4F8D;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #343A40;
+  background-color: #2D4F8D;
   color: #f2f4f7;
 }
 
 .tabela td {
-  border: solid 2px #343A40;
+  border: solid 2px #2D4F8D;
   padding: 5px 0px;
 }
 /*# sourceMappingURL=style.css.map */

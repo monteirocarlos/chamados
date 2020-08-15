@@ -1,7 +1,7 @@
 .form_geral {
 margin-top: 60px;
 text-align: center;
-background-color: #F2F4F6;
+background-color: $cinza-medio;;
 }
 
 .form_ind {
@@ -13,16 +13,18 @@ background-color: #F2F4F6;
     input{
         height: 30px;
         width: 100%;
-        border: solid 1px gray;
+        border: none;
         margin-top: 10px;
+        background-color: $cinza-claro;
     }
     textarea {
         width: 100%;
         height: 90px;
-        border: solid 1px gray;
+        border: none;
         margin-top: 10px;
         font-family: Venn;
         font-size: 18px;
+        background-color: $cinza-claro;
     }
 }
 
@@ -33,6 +35,8 @@ background-color: #F2F4F6;
         margin-top: 10px;
         font-family: Venn;
         font-size: 16px;
+        border: 1px solid $cinza-medio;
+        background-color: $cinza-claro;
     }
 }
 
