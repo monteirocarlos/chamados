@@ -303,6 +303,7 @@ header {
   height: 70px;
   display: inline-block;
   margin-top: 60px;
+  border-radius: 10px;
 }
 
 .painel img {
@@ -330,10 +331,6 @@ header {
   text-decoration: none;
 }
 
-.form_geral {
-  background-color: #DEDEDE;
-}
-
 .form_top {
   margin-top: 30px;
   text-align: center;
@@ -348,31 +345,41 @@ header {
 }
 
 .form_ind input {
-  height: 30px;
+  height: 40px;
   width: 100%;
   border: none;
   margin-top: 10px;
-  background-color: #f2f4f7;
+  background-color: #DEDEDE;
+  border-radius: 10px;
+  font-family: Venn;
+  font-size: 16px;
 }
 
 .form_ind textarea {
   width: 100%;
-  height: 90px;
+  height: 110px;
   border: none;
   margin-top: 10px;
   font-family: Venn;
   font-size: 18px;
-  background-color: #f2f4f7;
+  background-color: #DEDEDE;
+  border-radius: 10px;
 }
 
 .form_ind select {
   width: 100%;
-  height: 30px;
+  height: 40px;
   margin-top: 10px;
   font-family: Venn;
   font-size: 16px;
-  border: 1px solid #DEDEDE;
-  background-color: #f2f4f7;
+  border: 1px solid #ffff;
+  background-color: #DEDEDE;
+  color: #757575;
+  border-radius: 10px;
+}
+
+label {
+  color: #2D4F8D;
 }
 
 .botao {
@@ -381,7 +388,7 @@ header {
 
 .btn {
   border: 3px solid #2D4F8D;
-  border-radius: 1em;
+  border-radius: 10px;
   background: #2D4F8D;
   padding: 10px 30px;
   color: #f2f4f7;
