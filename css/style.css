@@ -432,13 +432,12 @@ label {
 }
 
 .color2 {
-  background-color: #DEDEDE;
-  margin-top: 40px;
+  margin-top: 30px;
   height: 273px;
 }
 
 .color1 {
-  text-align: center;
+  text-align: left;
 }
 
 .color1 img {
@@ -453,6 +452,65 @@ label {
 
 .botao_perfil {
   margin-top: 20px;
+}
+
+.form_perfil {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Venn;
+  font-weight: bold;
+  text-align: left;
+}
+
+.form_perfil input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  margin-top: 10px;
+  background-color: #DEDEDE;
+  border-radius: 10px;
+  font-family: Venn;
+  font-size: 16px;
+}
+
+.form_perfil textarea {
+  width: 100%;
+  height: 110px;
+  border: none;
+  margin-top: 10px;
+  font-family: Venn;
+  font-size: 18px;
+  background-color: #DEDEDE;
+  border-radius: 10px;
+}
+
+.form_perfil select {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  font-family: Venn;
+  font-size: 16px;
+  border: 1px solid #ffff;
+  background-color: #DEDEDE;
+  color: #757575;
+  border-radius: 10px;
+}
+
+label {
+  color: #2D4F8D;
+}
+
+.btn_perfil {
+  border: 3px solid #2D4F8D;
+  border-radius: 10px;
+  background: #2D4F8D;
+  color: #f2f4f7;
+  font-family: Venn;
+  font-size: 14px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+  margin-top: 25px;
 }
 
 footer {
