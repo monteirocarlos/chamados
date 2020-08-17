@@ -1,12 +1,17 @@
 .form_geral {
-margin-top: 60px;
-text-align: center;
-background-color: $cinza-medio;;
+background-color: $cinza-medio;
+
+}
+
+.form_top {
+    margin-top: 30px;
+    text-align: center;
+    
 }
 
 .form_ind {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: Venn;
     font-weight: bold;
     text-align: left;
@@ -44,6 +49,7 @@ background-color: $cinza-medio;;
     margin-top: 60px;
 }
 
+
 .btn {
     border: 3px solid $cinza-escuro;
     border-radius: 1em;
@@ -57,3 +63,5 @@ background-color: $cinza-medio;;
     letter-spacing: .1em;
     margin-bottom: 10px;
 }
+
+
