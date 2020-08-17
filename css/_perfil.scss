@@ -1,0 +1,29 @@
+.color1 {
+margin-top: 40px;
+
+}
+
+.color2 {
+    background-color: $cinza-medio;
+    margin-top: 40px;
+    height: 273px;
+
+}
+
+.color1 {
+    text-align: center;
+    img{
+        width: 50%;
+        height: 200px;
+        align-content: center;
+        border-radius: 50%;
+        border: solid 2px $cinza-claro;
+        background-color: $cinza-medio;
+        
+        
+    }
+}
+
+.botao_perfil {
+    margin-top: 20px;
+}
