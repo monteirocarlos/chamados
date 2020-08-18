@@ -513,6 +513,13 @@ label {
   margin-top: 25px;
 }
 
+.bug {
+  text-align: center;
+  margin-top: 40px;
+  font-family: Venn;
+  line-height: 1.5em;
+}
+
 footer {
   width: 100%;
   height: 60px;
@@ -537,5 +544,72 @@ footer {
   background-color: #2D4F8D;
   color: #f2f4f7;
   font-family: Venn;
+}
+
+#teste {
+  background-color: #DEDEDE;
+}
+
+.borda {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 1200px;
+  height: 800px;
+  background-color: #ffff;
+}
+
+.bg_form {
+  background-color: #ffff;
+  text-align: center;
+}
+
+.bg_form img {
+  width: 400px;
+  margin-top: 180px;
+  margin-bottom: 40px;
+}
+
+.bg_foto {
+  height: 100%;
+}
+
+.bg_foto img {
+  width: 740px;
+  height: 800px;
+}
+
+.form_menu {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Venn;
+  font-weight: bold;
+  text-align: left;
+}
+
+.form_menu input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  margin-top: 10px;
+  font-family: Venn;
+  font-size: 16px;
+  border-bottom: solid 1px #2D4F8D;
+}
+
+label {
+  color: #2D4F8D;
+}
+
+.btn_menu {
+  border: 3px solid #2D4F8D;
+  border-radius: 10px;
+  background: #2D4F8D;
+  color: #f2f4f7;
+  font-family: Venn;
+  font-size: 14px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+  margin-top: 25px;
 }
 /*# sourceMappingURL=style.css.map */
