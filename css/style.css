@@ -378,6 +378,10 @@ header {
   border-radius: 10px;
 }
 
+.form_ind select p {
+  color: green;
+}
+
 label {
   color: #2D4F8D;
 }
