@@ -587,7 +587,7 @@ footer {
 }
 
 .form_menu input {
-  height: 40px;
+  height: 30px;
   width: 100%;
   border: none;
   margin-top: 10px;
@@ -610,6 +610,12 @@ label {
   margin-bottom: 10px;
   width: 100%;
   height: 40px;
-  margin-top: 25px;
+  margin-top: 10px;
+}
+
+.titulo_menu {
+  font-family: Venn;
+  color: #2D4F8D;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
