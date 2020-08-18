@@ -16,7 +16,7 @@
     </header>
 
     <section>
-        <div class="container">
+        <div class="container ">
             <div class="titulo">
             <h1>HELP</h1>
         </div>
@@ -24,7 +24,7 @@
     </section>
    
     <section>
-        <div class="container">
+        <div class="container bg_bug">
             <div class="grid-16 bug">
                 <h1>
                     Reporte abaixo os erros apresentados.
@@ -33,37 +33,40 @@
                     <p>2020 - CYBERNET PROVEDOR </p>
             </div>
             
-            <div class="grid-16">
+            <div class="grid-16 form_bug">
                 
                 <form action="">
             
-                    <div class="grid-8 form_ind">
+                    <div class="grid-16 form_ind">
                     <label for="fname">Empresa:</label><br>    
                     <input type="text">
                     </div>
 
-                    <div class="grid-8 form_ind">
-                        <label for="fname">Empresa:</label><br>    
-                        <input class="cu" type="file">
+                    <div class="grid-16 form_anexo">
+                        <label for="fname">Anexo:</label><br>    
+                        <input type="file">
                     </div>
         
                     <div class="grid-16 form_ind">
                         <label for="fname">Mensagem:</label><br>    
-                        <textarea type="textarea"></textarea>
+                    <textarea type="textarea"></textarea>
+                    </div>
+                </form>
+                <div class="grid-16 btn_bug">
+                <button type="button" class="btn">Enviar</button>
+                </div>
 
-                    </form>
             </div>
-        
         </div>
     </section>
 
-    <footer>
+    <section class="footer_form">
         <div class="container">
         <div class="grid-16 footer_texto">
             <h1>Copyright © Cybernet Provedor 2020</h1>
         </div>
         </div>
-    </footer>
+    </section>
 
 </body>
 </html>

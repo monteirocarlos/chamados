@@ -400,6 +400,24 @@ label {
   margin-bottom: 10px;
 }
 
+.form_anexo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Venn;
+  font-weight: bold;
+  text-align: left;
+}
+
+.form_anexo input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  margin-top: 10px;
+  font-family: Venn;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
 .tabela_geral {
   background-color: #F2F4F6;
   margin-top: 60px;
@@ -518,6 +536,10 @@ label {
   margin-top: 40px;
   font-family: Venn;
   line-height: 1.5em;
+}
+
+.btn_bug {
+  text-align: center;
 }
 
 footer {
