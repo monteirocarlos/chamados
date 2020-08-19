@@ -34,21 +34,22 @@ include ("../controller/banco.php");
                 <table class="grid-16 tabela">
                   
                     <tr>
-                    <th>Empresa</th>
-                    <th>Responsável</th>
-                    <th>Data de emissão</th>
-                    <th>Status</th>
-                    <th>Ações</th>                      
+                    <th>Provedor</th>
+                    <th>CNPJ</th>
+                    <th>E-mail</th>                    
                     </tr>
                 
+                    <?php 
+                    $lista_colaboradores = "SELECT * FROM tb_provedores";
+                    $con = $mysqli->query($lista_colaboradores) or die ($mysqli->error);
+                    while($dados = $con->fetch_array()){ ?>
+
                     <tr>
-                    <td>RR64</td>
-                    <td>Eduardo José</td>
-                    <td>14/08/2020</td>
-                    <td>Pendente</td>
-                    <td>Ver mais</td>                    
+                    <td><?php echo $dados['provedor'];?></td>
+                    <td><?php echo $dados['cnpj'];?></td>
+                    <td><?php echo $dados['email'];?></td>                  
                     </tr>
-            
+                    <?php } ?>    
             </table>
             
         </div>
