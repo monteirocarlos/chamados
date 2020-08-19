@@ -11,22 +11,22 @@
       <div class="login">
             <div class="container borda">
                         <div class="grid-6 bg_form">
-                            <form action="">
+                            <form method="POST" action="controller/login.php">
                                 
                                 <img src="img/menu.png" alt="">
 
                                 <div class="grid-16 form_menu">
                                 <label for="fname">Login</label><br>    
-                                <input type="text">
+                                <input type="text" name="usuario" id="usuario" required>
                                 </div>
                                 
                                 <div class="grid-16 form_menu">
                                     <label for="fname">Senha</label><br>    
-                                    <input type="password">
+                                    <input type="password" name="senha" id="senha" required>
                                 </div>
                     
                                 <div class="grid-16 form_menu">
-                                <button type="button" class="btn_menu">Entrar</button>&nbsp
+                                <button type="submit" class="btn_menu">Entrar</button>&nbsp
                                 </div>
                                 
                                 <div class="titulo_menu"><h1>Recuperar senha</h1></div>

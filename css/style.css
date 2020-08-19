@@ -289,10 +289,11 @@ header {
 .titulo {
   margin-top: 100px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .titulo h1 {
-  font-size: 64px;
+  font-size: 48px;
   text-align: center;
   font-family: Venn;
   color: #2D4F8D;
@@ -329,6 +330,16 @@ header {
 
 .painel_geral a {
   text-decoration: none;
+}
+
+.sessao {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.sessao img {
+  width: 20px;
+  height: 20px;
 }
 
 .form_top {
@@ -370,7 +381,7 @@ header {
   margin-top: 10px;
   font-family: Venn;
   font-size: 16px;
-  border: 1px solid #ffff;
+  border: 2px solid #ffff;
   border-bottom: 1px solid #2D4F8D;
   -webkit-appearance: none;
   -moz-appearance: none;

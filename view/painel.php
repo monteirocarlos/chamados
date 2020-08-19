@@ -1,3 +1,9 @@
+<?php
+session_start();
+include ("../controller/verifica_login.php");
+include ("../controller/banco.php");
+?>
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
@@ -10,16 +16,20 @@
     <header>
         <div class="container">
             <div class="grid-4">
-               <a href="painel.html"><img class="menu_logo" src="../img/logo.png" alt=""></a> 
+               <a href="painel.php"><img class="menu_logo" src="../img/logo.png" alt=""></a> 
+            </div>
+            <div class="grid-12">
+            <div class="sessao">
+            <a href="../controller/logout.php"><img class="menu_logo" src="../img/logout.png" alt=""></a> 
+               </div>
             </div>
             
         </div>
     </header>
-
-    <section>
+            
         <div class="container">
             <div class="titulo">
-            <h1>BOAS VINDAS</h1>
+            <h1>BOAS VINDAS:  <?php echo $_SESSION['usuario']; ?></h1>
             </div>
         </div>
     </section>
@@ -39,7 +49,7 @@
           </div>
         </a>
           
-         <a href="view.html">
+         <a href="view.php">
           <div class="painel grid-8">
             <div class="grid-4">
             <img src="../img/viewTicket.png" alt="Novo Chamado">

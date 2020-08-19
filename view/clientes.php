@@ -8,13 +8,13 @@ include ("../controller/banco.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Meus Chamados - Cybernet</title>
+    <title>Cybernet - Provedores</title>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="grid-4">
-                <a href="painel.php"><img class="menu_logo" src="../img/logo.png" alt=""></a> 
+                <a href="painel.html"><img class="menu_logo" src="../img/logo.png" alt=""></a> 
             </div>
     
         </div>
@@ -23,7 +23,7 @@ include ("../controller/banco.php");
     <section>
         <div class="container">
             <div class="titulo">
-            <h1>VISUALIZAR CHAMADOS</h1>
+            <h1>PROVEDORES</h1>
         </div>
         </div>
     </section>
@@ -40,7 +40,7 @@ include ("../controller/banco.php");
                     </tr>
                 
                     <?php 
-                    $lista_colaboradores = "SELECT * FROM tb_provedores";
+                    $lista_colaboradores = "SELECT * FROM tb_provedores order by provedor";
                     $con = $mysqli->query($lista_colaboradores) or die ($mysqli->error);
                     while($dados = $con->fetch_array()){ ?>
 
