@@ -1,3 +1,7 @@
+<?php 
+include ("../controller/banco.php");
+?>
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
@@ -61,3 +65,4 @@
 
 </body>
 </html>
+ 
