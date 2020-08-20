@@ -1,5 +1,8 @@
-<?php 
+<?php
+session_start();
 include ("../controller/banco.php");
+include ("../controller/verifica_login.php");
+$user_check=$_SESSION['usuario'];
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +43,10 @@ include ("../controller/banco.php");
                     </tr>
                 
                     <?php 
-                    $lista_colaboradores = "SELECT * FROM tb_provedores";
+                    $lista_colaboradores = "SELECT * 
+                    FROM tb_provedores as A
+                    inner join tb_usuarios as B on provedor = b.empresa
+                    where usuario = '$user_check'";
                     $con = $mysqli->query($lista_colaboradores) or die ($mysqli->error);
                     while($dados = $con->fetch_array()){ ?>
 

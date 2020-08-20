@@ -1,7 +1,7 @@
 <?php
 session_start();
-include ("../controller/verifica_login.php");
 include ("../controller/banco.php");
+include ("../controller/verifica_login.php");
 ?>
 
 <!DOCTYPE html>

@@ -6,7 +6,8 @@ footer {
     font-family: Venn;
     color: $cinza-claro;
     margin-top: 100px;
-    position: absolute;
+    display: inline-block;
+    position: fixed;
     bottom: 0;
 }
 
