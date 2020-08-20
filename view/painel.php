@@ -16,7 +16,7 @@ include ("../controller/verifica_login.php");
     <header>
         <div class="container">
             <div class="grid-4">
-               <a href="painel.php"><img class="menu_logo" src="../img/logo.png" alt=""></a> 
+               <a href="painel.php"><img class="menu_logo" src="../img/logo.svg" alt=""></a> 
             </div>
             <div class="grid-12">
             <div class="sessao">
@@ -85,6 +85,7 @@ include ("../controller/verifica_login.php");
             </div>
             </div>
         </a>
+        </div>
     </section>
 
     <footer>

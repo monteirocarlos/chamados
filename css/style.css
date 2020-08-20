@@ -286,6 +286,16 @@ header {
   height: 60px;
 }
 
+.sessao {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.sessao img {
+  width: 25px;
+  height: 25px;
+}
+
 .titulo {
   margin-top: 100px;
   font-weight: bold;
@@ -330,16 +340,6 @@ header {
 
 .painel_geral a {
   text-decoration: none;
-}
-
-.sessao {
-  text-align: right;
-  margin-top: 20px;
-}
-
-.sessao img {
-  width: 20px;
-  height: 20px;
 }
 
 .form_top {

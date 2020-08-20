@@ -14,7 +14,7 @@ include ("../controller/banco.php");
     <header>
         <div class="container">
             <div class="grid-4">
-                <a href="painel.html"><img class="menu_logo" src="../img/logo.png" alt=""></a> 
+                <a href="painel.html"><img class="menu_logo" src="../img/logo.svg" alt=""></a> 
             </div>
     
         </div>
