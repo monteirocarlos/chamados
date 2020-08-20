@@ -61,7 +61,7 @@ include ("../controller/verifica_login.php");
           </div>
          </a>   
 
-         <a href="perfil.html">
+         <a href="perfil.php">
           <div class="painel grid-8">
             <div class="grid-4">
             <img src="../img/men.png" alt="Novo Chamado">
