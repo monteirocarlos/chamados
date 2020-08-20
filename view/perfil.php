@@ -1,3 +1,10 @@
+<?php
+session_start();
+include ("../controller/banco.php");
+include ("../controller/verifica_login.php");
+$user_check=$_SESSION['usuario'];
+?>
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
@@ -24,7 +31,7 @@
     <section>
         <div class="container">
             <div class="titulo">
-            <h1>MEU PERFIL</h1>
+            <h1>MINHAS INFORMAÇÕES</h1>
         </div>
         </div>
     </section>
@@ -37,34 +44,45 @@
                 <img src="../img/perfil.jpg" alt="">
             </div>
         </div>
+
             <div class="grid-10 color2">
                 <div class="grid-16">
                     <form action="">
-            
+
+                    <?php 
+                            $lista_colaboradores = "SELECT * 
+                            FROM tb_provedores as A
+                            join tb_usuarios as B on provedor = b.empresa
+                            where usuario = '$user_check'";
+                            $con = $mysqli->query($lista_colaboradores) or die ($mysqli->error);
+                            while($dados = $con->fetch_array()){ ?>    
+                            
                         <div class="grid-8 form_perfil">
-                        <label for="fname">Empresa</label><br>    
-                        <input type="text">
+                        <label for="fname">Empresa</label><br>
+                        <p><?php echo $dados['provedor'];?></p>
                         </div>
             
                         <div class="grid-8 form_perfil">
                         <label for="fname">Responsável</label><br>    
-                        <input type="text">
+                        <p><?php echo $dados['responsavel'];?></p>
                         </div>
-            
+
+                        <?php } ?>
+
                         <div class="grid-8 form_perfil">
-                        <label for="fname">Senha</label><br>    
-                        <input type="text">
+                        <label for="fname">Nova Senha</label><br>    
+                        <input type="password">
                         </div>
 
                         <div class="grid-8 form_perfil">
                         <button type="button" class="btn_perfil">Alterar Senha</button>&nbsp
                         </div>
-                        
+                       
                         </form>
                 </div>
             </div>
         </div>
-
+                         
     </section>
 
     <footer>

@@ -1,10 +1,10 @@
 .color1 {
-margin-top: 40px;
+margin-top: 60px;
 
 }
 
 .color2 {
-    margin-top: 30px;
+    margin-top: 50px;
     height: 273px;
 
 }
@@ -36,10 +36,9 @@ margin-top: 40px;
         width: 100%;
         border: none;
         margin-top: 10px;
-        background-color: $cinza-medio;
-        border-radius: 10px;
         font-family: Venn;
         font-size: 16px;
+        border-bottom: 1px solid $cinza-escuro;
     }
     textarea {
         width: 100%;
@@ -73,9 +72,9 @@ label {
 }
 
 .btn_perfil {
-    border: 3px solid $cinza-escuro;
-    border-radius: 10px;
-    background: $cinza-escuro;
+    border: 1px solid #fff;
+    border-bottom: 1px solid $cinza-escuro;
+    background-color: $cinza-escuro;
     color: $cinza-claro;
     font-family: Venn;
     font-size: 14px;
@@ -83,4 +82,11 @@ label {
     width: 100%;
     height: 40px;
     margin-top:25px
+}
+
+.form_perfil {
+    P {
+        border-bottom: 1px solid $cinza-escuro;
+        padding: 16px 0px;
+    }
 }
