@@ -42,23 +42,26 @@ $user_check=$_SESSION['usuario'];
                 <table class="grid-16 tabela">
                   
                     <tr>
-                    <th>Provedor</th>
-                    <th>CNPJ</th>
-                    <th>E-mail</th>                    
+                    <th>Protocolo</th> 
+                    <th>Prioridade</th>
+                    <th>Assunto</th>
+                    <th>Status</th> 
+                    <th>Solicitação</th>
                     </tr>
                 
                     <?php 
                     $lista_colaboradores = "SELECT * 
-                    FROM tb_provedores as A
-                    inner join tb_usuarios as B on provedor = b.empresa
-                    where usuario = '$user_check'";
+                    FROM tb_chamados
+                    where user = '$user_check'";
                     $con = $mysqli->query($lista_colaboradores) or die ($mysqli->error);
                     while($dados = $con->fetch_array()){ ?>
 
                     <tr>
-                    <td><?php echo $dados['provedor'];?></td>
-                    <td><?php echo $dados['cnpj'];?></td>
-                    <td><?php echo $dados['email'];?></td>                  
+                    <td><a href="">Nº<?php echo $dados['cod'];?></a></td>
+                    <td><?php echo $dados['prioridade'];?></td>
+                    <td><?php echo $dados['assunto'];?></td>
+                    <td><?php echo $dados['status_chamado'];?></td>
+                    <td><?php echo date('d/m/Y', strtotime($dados['data_solicitacao']));?></td>                   
                     </tr>
                     <?php } ?>
             </table>

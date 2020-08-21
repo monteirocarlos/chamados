@@ -59,13 +59,14 @@ $user_check=$_SESSION['usuario'];
                     <div class="grid-8 form_ind">
                     <label for="fname">Responsável:</label><br>    
                     <input type="text" name="grava_chamado_responsavel" id="grava_chamado_responsavel" value="<?php echo $dados['responsavel'];?>" readonly=“true”>
+                    <input type="text" name="grava_chamado_user" id="grava_chamado_user" value="<?php echo $dados['usuario'];?>" hidden>
                     </div>
 
                     <div class="grid-8 form_ind">
                     <label for="fname">E-mail:</label><br>    
                     <input type="text" name="grava_chamado_email" id="grava_chamado_email" value="<?php echo $dados['email'];?>">
                     </div>
-                        
+                      
                     <?php } ?>    
 
                     <div class="grid-8 form_ind">
@@ -80,9 +81,10 @@ $user_check=$_SESSION['usuario'];
                         
                     <div class="grid-16 form_ind">
                     <label for="fname">Assunto:</label><br>    
-                    <input type="text" name="grava_chamado_assunto" id="grava_chamado_assunto" >
-                    <input type="text" name="grava_chamado_status" id="grava_chamado_status" value="novo" hidden>
+                    <input type="text" name="grava_chamado_assunto" id="grava_chamado_assunto">
+                    <input type="text" value="Novo" name="grava_chamado_status" id="grava_chamado_status" hidden>
                     <input type="text" name="grava_chamado_data_solicitacao" id="grava_chamado_data_solicitacao" value="<?php echo date('Y-m-d');?>" hidden>
+                    
                     </div>
                     
                     <div class="grid-16 form_ind">
