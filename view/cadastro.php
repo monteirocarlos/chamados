@@ -64,7 +64,7 @@ $user_check=$_SESSION['usuario'];
 
                     <div class="grid-8 form_ind">
                     <label for="fname">E-mail:</label><br>    
-                    <input type="text" name="grava_chamado_email" id="grava_chamado_email" value="<?php echo $dados['email'];?>">
+                    <input type="text" name="grava_chamado_email" id="grava_chamado_email" value="<?php echo $dados['email'];?>" maxlength="50">
                     </div>
                       
                     <?php } ?>    
