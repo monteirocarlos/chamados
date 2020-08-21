@@ -32,8 +32,7 @@ $user_check=$_SESSION['usuario'];
     <section>
         <div class="container">
             <div class="titulo">
-            <h1>NOVO CHAMADO</h1>
-            
+            <h1>NOVO CHAMADO</h1> 
         </div>
         </div>
     </section>
@@ -42,7 +41,7 @@ $user_check=$_SESSION['usuario'];
         <div class="container">
             <div class="form_geral">
             <div class="form_top grid-16">
-                <form action="">
+                <form method="POST" action="../controller/grava_chamado.php" >
             
                     <?php 
                     $lista_colaboradores = "SELECT * 
@@ -83,14 +82,14 @@ $user_check=$_SESSION['usuario'];
                     <label for="fname">Assunto:</label><br>    
                     <input type="text" name="grava_chamado_assunto" id="grava_chamado_assunto" >
                     <input type="text" name="grava_chamado_status" id="grava_chamado_status" value="novo" hidden>
-                    <input type="date" name="grava_chamado_data_solicitacao" id="grava_chamado_data_solicitacao" value="<?php echo date(d/m/Y);?>" hidden>
+                    <input type="text" name="grava_chamado_data_solicitacao" id="grava_chamado_data_solicitacao" value="<?php echo date('Y-m-d');?>" hidden>
                     </div>
                     
                     <div class="grid-16 form_ind">
                     <label for="fname">Mensagem:</label><br>    
                     <textarea type="textarea" name="grava_chamado_mensagem" id="grava_chamado_mensagem"></textarea>
                     </div>
-                    <button type="button" class="btn">Solicitar</button>&nbsp
+                    <button type="submit" class="btn">Solicitar</button>&nbsp
                     </form>
             </div>
         </div>
