@@ -1,3 +1,10 @@
+<?php
+session_start();
+include ("../controller/banco.php");
+include ("../controller/verifica_login.php");
+$user_check=$_SESSION['usuario'];
+?>
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
@@ -37,24 +44,34 @@
             <div class="form_top grid-16">
                 <form action="">
             
+                    <?php 
+                    $lista_colaboradores = "SELECT * 
+                    FROM tb_provedores as A
+                    join tb_usuarios as B on provedor = b.empresa
+                    where usuario = '$user_check'";
+                    $con = $mysqli->query($lista_colaboradores) or die ($mysqli->error);
+                    while($dados = $con->fetch_array()){ ?>    
+
                     <div class="grid-8 form_ind">
                     <label for="fname">Empresa:</label><br>    
-                    <input type="text">
+                    <input type="text" name="grava_chamado_empresa" id="grava_chamado_empresa" value="<?php echo $dados['provedor'];?>" readonly=“true”>
                     </div>
         
                     <div class="grid-8 form_ind">
                     <label for="fname">Responsável:</label><br>    
-                    <input type="text">
+                    <input type="text" name="grava_chamado_responsavel" id="grava_chamado_responsavel" value="<?php echo $dados['responsavel'];?>" readonly=“true”>
                     </div>
-        
+
                     <div class="grid-8 form_ind">
                     <label for="fname">E-mail:</label><br>    
-                    <input type="text">
+                    <input type="text" name="grava_chamado_email" id="grava_chamado_email" value="<?php echo $dados['email'];?>">
                     </div>
-        
+                        
+                    <?php } ?>    
+
                     <div class="grid-8 form_ind">
                     <label for="name">Prioridade:</label><br>    
-                    <select>
+                    <select name="grava_chamado_prioridade" id="grava_chamado_prioridade">
                         <option value="">Selecione...</option>
                         <option value="Baixa">Baixa</option>
                         <option  value="Média">Média</option>
@@ -64,12 +81,14 @@
                         
                     <div class="grid-16 form_ind">
                     <label for="fname">Assunto:</label><br>    
-                    <input type="text">
+                    <input type="text" name="grava_chamado_assunto" id="grava_chamado_assunto" >
+                    <input type="text" name="grava_chamado_status" id="grava_chamado_status" value="novo" hidden>
+                    <input type="date" name="grava_chamado_data_solicitacao" id="grava_chamado_data_solicitacao" value="<?php echo date(d/m/Y);?>" hidden>
                     </div>
                     
                     <div class="grid-16 form_ind">
                     <label for="fname">Mensagem:</label><br>    
-                    <textarea type="textarea"></textarea>
+                    <textarea type="textarea" name="grava_chamado_mensagem" id="grava_chamado_mensagem"></textarea>
                     </div>
                     <button type="button" class="btn">Solicitar</button>&nbsp
                     </form>
