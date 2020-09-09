@@ -601,8 +601,8 @@ footer {
 .borda {
   margin-top: 60px;
   margin-bottom: 60px;
-  max-width: 1200px;
-  max-height: 800px;
+  width: 1200px;
+  height: 800px;
   background-color: #ffff;
 }
 
@@ -612,7 +612,7 @@ footer {
 }
 
 .bg_form img {
-  max-width: 400px;
+  width: 400px;
   margin-top: 180px;
   margin-bottom: 40px;
 }
@@ -622,8 +622,8 @@ footer {
 }
 
 .bg_foto img {
-  max-width: 740px;
-  max-height: 800px;
+  width: 740px;
+  height: 800px;
 }
 
 .form_menu {
