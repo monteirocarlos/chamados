@@ -601,8 +601,8 @@ footer {
 .borda {
   margin-top: 60px;
   margin-bottom: 60px;
-  width: 1200px;
-  height: 800px;
+  max-width: 1200px;
+  max-height: 800px;
   background-color: #ffff;
 }
 
@@ -612,7 +612,7 @@ footer {
 }
 
 .bg_form img {
-  width: 400px;
+  max-width: 400px;
   margin-top: 180px;
   margin-bottom: 40px;
 }
@@ -622,8 +622,8 @@ footer {
 }
 
 .bg_foto img {
-  width: 740px;
-  height: 800px;
+  max-width: 740px;
+  max-height: 800px;
 }
 
 .form_menu {
@@ -665,38 +665,5 @@ label {
   font-family: Venn;
   color: #2D4F8D;
   font-weight: bold;
-}
-
-.grid-10 {
-  margin-top: 60px;
-  background-color: #DEDEDE;
-  height: 400px;
-}
-
-.grid-6 {
-  margin-top: 60px;
-  background-color: #DEDEDE;
-  height: 400px;
-}
-
-.titulo_chamado {
-  text-align: left;
-  font-family: Venn;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.titulo_chamado h1 {
-  margin-top: 30px;
-  margin-left: 30px;
-}
-
-.titulo_chamado p {
-  margin-top: 20px;
-  font-size: 18px;
-  margin-left: 30px;
-  margin-right: 30px;
-  line-height: 1.3em;
 }
 /*# sourceMappingURL=style.css.map */

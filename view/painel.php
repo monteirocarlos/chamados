@@ -1,7 +1,6 @@
 <?php
 session_start();
 include ("../controller/banco.php");
-include ("../controller/verifica_login.php");
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +28,7 @@ include ("../controller/verifica_login.php");
             
         <div class="container">
             <div class="titulo">
-            <h1>BOAS VINDAS:  <?php echo $_SESSION['usuario']; ?></h1>
+            <h1>BOAS VINDAS:  <?php echo $_SESSION['UsuarioNivel']; ?></h1>
             </div>
         </div>
     </section>
