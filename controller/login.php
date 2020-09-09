@@ -9,23 +9,23 @@
 		$senha = sha1($senha);
 			
 		//Buscar na tabela usuario o usuário que corresponde com os dados digitado no formulário
-		$result_usuario = "SELECT * FROM usuarios WHERE usuario = '$usuario' && senha = '$senha'";
+		$result_usuario = "SELECT * FROM tb_usuarios WHERE usuario = '$usuario' && senha = '$senha'";
 		$resultado_usuario = mysqli_query($mysqli, $result_usuario);
 		$resultado = mysqli_fetch_assoc($resultado_usuario);
 		
 		//Encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
 		if(isset($resultado)){
 			$_SESSION['usuarioId'] = $resultado['id'];
-			$_SESSION['usuarioNome'] = $resultado['nome'];
+			$_SESSION['usuarioNome'] = $resultado['responsavel'];
 			$_SESSION['usuarioNiveisAcessoId'] = $resultado['nivel'];
 			$_SESSION['usuarioUser'] = $resultado['usuario'];
 			
 			if($_SESSION['usuarioNiveisAcessoId'] == "1"){
-				header("Location: ../view/painel.php");
+				header("Location: ../view/admin.php");
 			}
 			
 			elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
-				header("Location: ../view/bug.html");
+				header("Location: ../view/painel.php");
 			}
 		//Não foi encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
 		//redireciona o usuario para a página de login

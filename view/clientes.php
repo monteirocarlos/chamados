@@ -56,13 +56,13 @@ include ("../controller/banco.php");
 
     </section>
 
-    <footer>
+    <section class="footer_form">
         <div class="container">
         <div class="grid-16 footer_texto">
             <h1>Copyright © Cybernet Provedor 2020</h1>
         </div>
         </div>
-    </footer>
+    </section>
 
 </body>
 </html>

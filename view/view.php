@@ -1,7 +1,7 @@
 <?php
 session_start();
 include ("../controller/banco.php");
-$user_check=$_SESSION['usuario'];
+$user_check=$_SESSION['usuarioUser'];
 ?>
 
 <!DOCTYPE html>
