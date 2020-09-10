@@ -40,7 +40,7 @@ include ("../controller/verifica_login.php");
         <a href="cadastro.php">
             <div class="painel grid-8">
             <div class="grid-4">
-            <img src="../img/newTicket.png" alt="Novo Chamado">
+            <img src="../img/provedor.png" alt="Novo Chamado">
             </div>
             <div class="grid-12 painel_texto ">
             <p>Novo Provedor</p>
@@ -52,7 +52,7 @@ include ("../controller/verifica_login.php");
          <a href="view.php">
           <div class="painel grid-8">
             <div class="grid-4">
-            <img src="../img/viewTicket.png" alt="Novo Chamado">
+            <img src="../img/users.png" alt="Novo Chamado">
             </div>
             <div class="grid-12 painel_texto ">
             <p>Novo usuário</p>
@@ -60,6 +60,30 @@ include ("../controller/verifica_login.php");
             </div>
           </div>
          </a>   
+
+         <a href="view.php">
+          <div class="painel grid-8">
+            <div class="grid-4">
+            <img src="../img/provedores.png" alt="Novo Chamado">
+            </div>
+            <div class="grid-12 painel_texto ">
+            <p>Nossos clientes</p>
+            <p>Gerencie os provedores cadastrados</p>
+            </div>
+          </div>
+         </a>  
+
+         <a href="view.php">
+          <div class="painel grid-8">
+            <div class="grid-4">
+            <img src="../img/chamados.png" alt="Novo Chamado">
+            </div>
+            <div class="grid-12 painel_texto ">
+            <p>Vizualizar chamados</p>
+            <p>Acompanhe os atendimentos solicitados</p>
+            </div>
+          </div>
+         </a>  
 
          <a href="perfil.php">
           <div class="painel grid-8">
@@ -76,11 +100,11 @@ include ("../controller/verifica_login.php");
         <a href="bug.html">
           <div class="painel grid-8">
             <div class="grid-4">
-            <img src="../img/settings.png" alt="Novo Chamado">
+            <img src="../img/wiki.png" alt="Novo Chamado">
             </div>
             <div class="grid-12 painel_texto ">
-            <p>Configurações</p>
-            <p>Reporte algum problema apresentado</p>
+            <p>Wiki</p>
+            <p>Acompanhe a documentação</p>
                 </div>
             </div>
             </div>
