@@ -37,7 +37,7 @@ include ("../controller/verifica_login.php");
     <section class="painel_geral">
         <div class="container">
         
-        <a href="cadastro.php">
+        <a href="newprovedor.php">
             <div class="painel grid-8">
             <div class="grid-4">
             <img src="../img/provedor.png" alt="Novo Chamado">

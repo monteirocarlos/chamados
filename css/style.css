@@ -666,4 +666,8 @@ label {
   color: #2D4F8D;
   font-weight: bold;
 }
+
+.caixa {
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
