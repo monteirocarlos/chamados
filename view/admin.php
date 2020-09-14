@@ -49,7 +49,7 @@ include ("../controller/verifica_login.php");
           </div>
         </a>
           
-         <a href="view.php">
+         <a href="newuser.php">
           <div class="painel grid-8">
             <div class="grid-4">
             <img src="../img/users.png" alt="Novo Chamado">
