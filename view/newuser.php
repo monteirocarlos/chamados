@@ -1,7 +1,7 @@
 <?php
 session_start();
 include ("../controller/banco.php");
-include ("../controller/verifica_login.php");
+include ("../controller/verifica)login.php");
 $user_check=$_SESSION['usuarioUser'];
 ?>
 
@@ -41,7 +41,7 @@ $user_check=$_SESSION['usuarioUser'];
         <div class="container">
             <div class="form_geral">
             <div class="form_top grid-16">
-                <form method="POST" action="../controller/grava_provedor.php">
+                <form method="POST" action="../controller/grava_user.php">
                 
                 <div class="grid-8 form_ind">
                 <label for="fname">Empresa:</label><br>    

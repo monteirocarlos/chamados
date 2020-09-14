@@ -20,11 +20,11 @@
 			$_SESSION['usuarioNiveisAcessoId'] = $resultado['nivel'];
 			$_SESSION['usuarioUser'] = $resultado['usuario'];
 			
-			if($_SESSION['usuarioNiveisAcessoId'] == "1"){
+			if($_SESSION['usuarioNiveisAcessoId'] == "5"){
 				header("Location: ../view/admin.php");
 			}
 			
-			elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
+			elseif($_SESSION['usuarioNiveisAcessoId'] == "7"){
 				header("Location: ../view/painel.php");
 			}
 		//Não foi encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
