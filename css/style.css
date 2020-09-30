@@ -433,7 +433,6 @@ label {
 }
 
 .tabela_geral {
-  background-color: #F2F4F6;
   margin-top: 60px;
 }
 
@@ -441,13 +440,11 @@ label {
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
-  border: solid 2px #2D4F8D;
   font-family: Venn;
 }
 
 .tabela th {
   padding: 10px 0px;
-  border: solid 2px #2D4F8D;
   font-weight: bold;
   text-transform: uppercase;
   background-color: #2D4F8D;
@@ -464,6 +461,10 @@ label {
   color: #2D4F8D;
   font-size: 16px;
   font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background: #DEDEDE;
 }
 
 .color1 {

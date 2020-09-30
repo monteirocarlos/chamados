@@ -15,5 +15,6 @@ $executa = "INSERT INTO tb_usuarios (empresa, responsavel, usuario, senha, email
 $query = $mysqli->query($executa);
 
 echo"<script language='javascript' type='text/javascript'>alert('Usuário cadastrado!');window.location.href='../view/admin.php'</script>";
+
 ?>
 

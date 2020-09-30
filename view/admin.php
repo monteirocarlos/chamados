@@ -16,7 +16,7 @@ include ("../controller/verifica_login.php");
     <header>
         <div class="container">
             <div class="grid-4">
-               <a href="painel.php"><img class="menu_logo" src="../img/logo.svg" alt=""></a> 
+               <a href="admin.php"><img class="menu_logo" src="../img/logo.svg" alt=""></a> 
             </div>
             <div class="grid-12">
             <div class="sessao">
@@ -73,7 +73,7 @@ include ("../controller/verifica_login.php");
           </div>
          </a>  
 
-         <a href="view.php">
+         <a href="adminview.php">
           <div class="painel grid-8">
             <div class="grid-4">
             <img src="../img/chamados.png" alt="Novo Chamado">
@@ -85,7 +85,7 @@ include ("../controller/verifica_login.php");
           </div>
          </a>  
 
-         <a href="perfil.php">
+         <a href="adminperfil.php">
           <div class="painel grid-8">
             <div class="grid-4">
             <img src="../img/men.png" alt="Novo Chamado">
@@ -97,7 +97,7 @@ include ("../controller/verifica_login.php");
           </div>
         </a>
 
-        <a href="bug.html">
+        <a href="http://wiki.cybernetprovedor.com" target="_blank">
           <div class="painel grid-8">
             <div class="grid-4">
             <img src="../img/wiki.png" alt="Novo Chamado">

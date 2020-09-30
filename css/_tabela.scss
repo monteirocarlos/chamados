@@ -1,5 +1,4 @@
 .tabela_geral {
-background-color: #F2F4F6;
 margin-top: 60px;
 
 }
@@ -8,11 +7,12 @@ margin-top: 60px;
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    border: solid 2px $cinza-escuro;
-    font-family: Venn;
+    font-family: Venn; 
+    
+    
+    
     th {
         padding: 10px 0px;
-        border: solid 2px $cinza-escuro;
         font-weight: bold;
         text-transform: uppercase;
         background-color: $cinza-escuro;
@@ -29,4 +29,10 @@ margin-top: 60px;
             font-weight: bold;
         }
     }
+}
+
+
+table {
+    tr:nth-child(even) {background: $cinza-medio}
+    
 }

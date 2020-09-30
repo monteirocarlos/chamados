@@ -12,5 +12,5 @@ $executa = "INSERT INTO tb_provedores (provedor, cnpj, email, telefone, cod_mk )
   
 $query = $mysqli->query($executa);
 
-echo"<script language='javascript' type='text/javascript'>alert('Provedor cadastrado!');window.location.href='../view/admin.php'</script>";
+echo"<script language='javascript' type='text/javascript'>alert('Provedor cadastrado!');window.location.href='../view/newprovedor.php'</script>";
 ?>
