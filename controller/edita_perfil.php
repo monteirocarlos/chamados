@@ -1,14 +1,11 @@
 <?php
-
 include "banco.php";
+$senha = $_POST["senha"];
+$id = $_POST["idperfil"];
 
-$senha = $_POST["grava_alteracao_senha"];
-
-$executa = "UPDATE tb_usuarios senha VALUES sha1('$senha')";
-  
+$executa = "UPDATE tb_usuarios SET senha=sha1('$senha') WHERE tb_usuarios.id='$id'";
 $query = $mysqli->query($executa);
 
 echo"<script language='javascript' type='text/javascript'>alert('Senha alterada!');window.location.href='../controller/logout.php'</script>";
 
 ?>
-

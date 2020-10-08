@@ -47,31 +47,33 @@ $user_check = $_SESSION['usuarioUser'];
 
             <div class="grid-10 color2">
                 <div class="grid-16">
-                    <form action="../controller/alterar_senha.php">
-
+                
                     <?php 
                             $lista_colaboradores = "SELECT * 
                             FROM tb_provedores as A
                             join tb_usuarios as B on provedor = b.empresa
                             where usuario = '$user_check'";
                             $con = $mysqli->query($lista_colaboradores) or die ($mysqli->error);
-                            while($dados = $con->fetch_array()){ ?>    
+                            while($dados = $con->fetch_array()){ ?> 
+                    
+                    <form method="POST" action="../controller/edita_perfil.php">   
                             
                         <div class="grid-8 form_perfil">
                         <label for="fname">Empresa</label><br>
-                        <p><?php echo $dados['provedor'];?></p>
+                        <input type="text" name='empresa' id='empresa' value="<?php echo $dados['provedor'];?>">
+                        <input type="text" name="idperfil" id="idperfil" value="<?php echo $dados['id'];?> " hidden>
                         </div>
             
                         <div class="grid-8 form_perfil">
                         <label for="fname">Responsável</label><br>    
-                        <p><?php echo $dados['responsavel'];?></p>
+                        <input type="text" name='responsavel' id='responsavel' value="<?php echo $dados['responsavel'];?>" readonly>
                         </div>
 
                         <?php } ?>
 
                         <div class="grid-8 form_perfil">
                         <label for="fname">Nova Senha</label><br>    
-                        <input type="password" name="grava_alteracao_senha" id="grava_alteracao_senha">    
+                        <input type="password" name="senha" id="senha">    
                         </div>
 
                         <div class="grid-8 form_perfil">
