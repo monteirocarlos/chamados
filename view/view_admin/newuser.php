@@ -1,7 +1,7 @@
 <?php
 session_start();
 include ("../../controller/banco.php");
-include ("../../controller/verifica)login.php");
+include ("../../controller/verifica_admin.php");
 $user_check=$_SESSION['usuarioUser'];
 ?>
 
