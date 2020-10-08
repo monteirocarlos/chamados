@@ -1,7 +1,7 @@
 <?php
 session_start();
-include ("../controller/banco.php");
-include ("../controller/verifica_login.php");
+include ("../../controller/banco.php");
+include ("../../controller/verifica_login.php");
 ?>
 
 <!DOCTYPE html>
@@ -9,18 +9,18 @@ include ("../controller/verifica_login.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <title>Portal chamados</title>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="grid-4">
-               <a href="admin.php"><img class="menu_logo" src="../img/logo.svg" alt=""></a> 
+               <a href="admin.php"><img class="menu_logo" src="../../img/logo.svg" alt=""></a> 
             </div>
             <div class="grid-12">
             <div class="sessao">
-            <a href="../controller/logout.php"><img class="menu_logo" src="../img/logout.png" alt=""></a> 
+            <a href="../../controller/logout.php"><img class="menu_logo" src="../../img/logout.png" alt=""></a> 
                </div>
             </div>
             
@@ -40,7 +40,7 @@ include ("../controller/verifica_login.php");
         <a href="newprovedor.php">
             <div class="painel grid-8">
             <div class="grid-4">
-            <img src="../img/provedor.png" alt="Novo Chamado">
+            <img src="../../img/provedor.png" alt="Novo Chamado">
             </div>
             <div class="grid-12 painel_texto ">
             <p>Novo Provedor</p>
@@ -52,7 +52,7 @@ include ("../controller/verifica_login.php");
          <a href="newuser.php">
           <div class="painel grid-8">
             <div class="grid-4">
-            <img src="../img/users.png" alt="Novo Chamado">
+            <img src="../../img/users.png" alt="Novo Chamado">
             </div>
             <div class="grid-12 painel_texto ">
             <p>Novo usuário</p>
@@ -64,7 +64,7 @@ include ("../controller/verifica_login.php");
          <a href="clientes.php">
           <div class="painel grid-8">
             <div class="grid-4">
-            <img src="../img/provedores.png" alt="Novo Chamado">
+            <img src="../../img/provedores.png" alt="Novo Chamado">
             </div>
             <div class="grid-12 painel_texto ">
             <p>Nossos clientes</p>
@@ -76,7 +76,7 @@ include ("../controller/verifica_login.php");
          <a href="adminview.php">
           <div class="painel grid-8">
             <div class="grid-4">
-            <img src="../img/chamados.png" alt="Novo Chamado">
+            <img src="../../img/chamados.png" alt="Novo Chamado">
             </div>
             <div class="grid-12 painel_texto ">
             <p>Vizualizar chamados</p>
@@ -88,7 +88,7 @@ include ("../controller/verifica_login.php");
          <a href="adminperfil.php">
           <div class="painel grid-8">
             <div class="grid-4">
-            <img src="../img/men.png" alt="Novo Chamado">
+            <img src="../../img/men.png" alt="Novo Chamado">
             </div>
             <div class="grid-12 painel_texto ">
             <p>Meu Perfil</p>
@@ -100,7 +100,7 @@ include ("../controller/verifica_login.php");
         <a href="http://wiki.cybernetprovedor.com" target="_blank">
           <div class="painel grid-8">
             <div class="grid-4">
-            <img src="../img/wiki.png" alt="Novo Chamado">
+            <img src="../../img/wiki.png" alt="Novo Chamado">
             </div>
             <div class="grid-12 painel_texto ">
             <p>Wiki</p>
