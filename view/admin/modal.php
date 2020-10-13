@@ -45,7 +45,7 @@ $user_check=$_SESSION['usuarioUser'];
 
             <!-- Modal content -->
             <div class="modal-content container">
-            <span class="close" hidden>&times;</span>
+            <span class="close grid-16">&times;</span>
 
                     <div class="grid-6 form_ind">
                     <label for="fname">Empresa:</label><br>    
