@@ -60,7 +60,7 @@ $user_check=$_SESSION['usuarioUser'];
                     <tr>
                     <td><?php echo $dados['provedor'];?></td>
                     <td><?php echo $dados['responsavel'];?></td>
-                    <td><a href="">Nº<?php echo $dados['cod'];?></a></td>
+                    <td><?php echo date('dmY', strtotime($dados['data_solicitacao']))?>-<?php echo $dados['cod'];?></td>
                     <td><?php echo $dados['prioridade'];?></td>
                     <td><?php echo $dados['assunto'];?></td>
                     <td><?php echo $dados['status_chamado'];?></td>
