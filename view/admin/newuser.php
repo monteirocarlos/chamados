@@ -97,8 +97,6 @@ $user_check=$_SESSION['usuarioUser'];
     </div>
     </section>
 
-        
-    
     <footer>
         <div class="container">
         <div class="grid-16 footer_texto">

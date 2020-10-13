@@ -1,7 +1,7 @@
 <?php
 session_start();
 include ("../../controller/banco.php");
-include ("../../controller/verifica_admin.php");
+include ("../../controller/verifica_user.php");
 $user_check=$_SESSION['usuarioUser'];
 ?>
 
@@ -17,7 +17,7 @@ $user_check=$_SESSION['usuarioUser'];
 <header>
         <div class="container">
             <div class="grid-4">
-               <a href="admin.php"><img class="menu_logo" src="../../img/logo.svg" alt=""></a> 
+               <a href="painel.php"><img class="menu_logo" src="../../img/logo.svg" alt=""></a> 
             </div>
             <div class="grid-12">
             <div class="sessao">
@@ -42,8 +42,6 @@ $user_check=$_SESSION['usuarioUser'];
                 <table class="grid-16 tabela">
                   
                     <tr>
-                    <th>Provedor</th>
-                    <th>Responsavel</th>
                     <th>Protocolo</th> 
                     <th>Prioridade</th>
                     <th>Assunto</th>
@@ -53,13 +51,12 @@ $user_check=$_SESSION['usuarioUser'];
                 
                     <?php 
                     $lista_colaboradores = "SELECT * 
-                    FROM tb_chamados";
+                    FROM tb_chamados
+                    where user = '$user_check'";
                     $con = $mysqli->query($lista_colaboradores) or die ($mysqli->error);
                     while($dados = $con->fetch_array()){ ?>
 
                     <tr>
-                    <td><?php echo $dados['provedor'];?></td>
-                    <td><?php echo $dados['responsavel'];?></td>
                     <td><a href="">Nº<?php echo $dados['cod'];?></a></td>
                     <td><?php echo $dados['prioridade'];?></td>
                     <td><?php echo $dados['assunto'];?></td>
