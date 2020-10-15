@@ -89,47 +89,47 @@ $user_check=$_SESSION['usuarioUser'];
             
             <div class="grid-6 form_ind">
             <label for="fname">Provedor:</label><br>    
-            <input type="text" name="grava_provedor_empresa" id="grava_provedor_empresa" onkeyup="maiuscula(this)"/>
+            <input type="text" name="view_provedor" id="view_provedor" onkeyup="maiuscula(this)"/>
             </div>
 
             <div class="grid-6 form_ind">
             <label for="fname">Solicitante:</label><br>    
-            <input type="text" name="grava_provedor_cnpj" id="grava_provedor_cnpj">
+            <input type="text" name="view_solicitante" id="view_solicitante">
             </div>
 
             <div class="grid-4 form_ind">
             <label for="fname">E-mail:</label><br>    
-            <input type="text" name="grava_provedor_email" id="grava_provedor_email" maxlength="50">
+            <input type="text" name="view_email" id="view_email" maxlength="50">
             </div> 
 
             <div class="grid-6 form_ind">
             <label for="fname">Protocolo:</label><br>    
-            <input type="text" name="grava_provedor_empresa" id="grava_provedor_empresa" onkeyup="maiuscula(this)"/>
+            <input type="text" name="view_protocolo" id="view_protocolo" onkeyup="maiuscula(this)"/>
             </div>
 
             <div class="grid-6 form_ind">
             <label for="fname">Prioridade:</label><br>    
-            <input type="text" name="grava_provedor_cnpj" id="grava_provedor_cnpj">
+            <input type="text" name="view_prioridade" id="view_prioridade">
             </div>
 
             <div class="grid-4 form_ind">
             <label for="fname">Data de solicitação:</label><br>    
-            <input type="text" name="grava_provedor_email" id="grava_provedor_email" maxlength="50">
+            <input type="text" name="view_data" id="view_data" maxlength="50">
             </div> 
 
             <div class="grid-8 form_ind">
             <label for="fname">Status:</label><br>    
-            <input type="text" name="grava_provedor_cnpj" id="grava_provedor_cnpj">
+            <input type="text" name="view_status" id="view_status">
             </div>
 
             <div class="grid-8 form_ind">
             <label for="fname">Assunto:</label><br>    
-            <input type="text" name="grava_provedor_cnpj" id="grava_provedor_cnpj">
+            <input type="text" name="view_assunto" id="view_assunto">
             </div>
 
             <div class="grid-16 form_ind">
             <label for="fname">Mensagem:</label><br>    
-            <input type="text" name="grava_provedor_cnpj" id="grava_provedor_cnpj">
+            <input type="text" name="view_mensagem" id="view_mensagem">
             </div>
      </div>
     </div>
@@ -216,7 +216,6 @@ function editar(e) {
   $("#edita_colaborador_cidade").val(cidade);
 }
 </script>
-
 
 <footer>
         <div class="container">
