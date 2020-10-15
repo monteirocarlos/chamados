@@ -38,7 +38,7 @@ $user_check=$_SESSION['usuarioUser'];
     <section>
     
             <!-- Trigger/Open The Modal -->
-            <button id="myBtn">Open Modal</button>
+            <i id="myBtn">Open Modal</i>
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -75,9 +75,9 @@ $user_check=$_SESSION['usuarioUser'];
                     <div class="grid-4 form_ind">
                     <label for="fname">E-mail:</label><br>    
                     <input type="text" name="grava_provedor_email" id="grava_provedor_email" maxlength="50">
-                    </div>  
-            </div>
+                    </div> 
 
+             </div>
             </div>
         </section>
 
