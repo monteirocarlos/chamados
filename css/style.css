@@ -684,7 +684,6 @@ label {
   text-transform: uppercase;
 }
 
-/* Normal styles for the modal */
 #modal {
   opacity: 0;
   position: absolute;
@@ -713,5 +712,16 @@ label {
   text-align: right;
   font-size: 14px;
   color: #2D4F8D;
+}
+
+#modal .overlay {
+  background-color: #000;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 /*# sourceMappingURL=style.css.map */

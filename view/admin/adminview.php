@@ -41,14 +41,11 @@ $user_check=$_SESSION['usuarioUser'];
 <section>
     <div id="modal">
 		<div class="container modal-content">
-			
-			<div>
-            <form action="">
-            
+	
+         <form action="">
             <div class="grid-16 cf">
                 <a class= "form_ind" href="#"><i ><img src="../../img/close.png" alt=""></i></a>
             </div>
-
             <div class="titulo_modal grid-16 form_ind">
             <h1>Detalhamento do chamado:</h1>	
             </div>
@@ -99,12 +96,9 @@ $user_check=$_SESSION['usuarioUser'];
             <input type="text" name="view_mensagem" id="view_mensagem">
             </div>
 
-            </form>
-			</div>
-
-			
-		</div>
-		<div class="overlay"></div>
+           </form>
+        </div>
+        <div class="overlay"></div>
 	</div>  
 </section>
 
@@ -131,6 +125,7 @@ $user_check=$_SESSION['usuarioUser'];
                     while($dados = $con->fetch_array()){ ?>
                     
                     <tr>
+                    <td style="display:none;"><?php echo $dados['cod'];?></td>
                     <td><i class="<?php echo date('dmY', strtotime($dados['data_solicitacao']))?><?php echo $dados['cod'];?>" onclick="editar(this)"><p><a href="#modal" class="btn_modal"><img src="../../img/eye.png" alt=""></a></p></i></td>
                     <td><?php echo $dados['provedor'];?></td>
                     <td><?php echo $dados['responsavel'];?></td>
@@ -139,11 +134,48 @@ $user_check=$_SESSION['usuarioUser'];
                     <td><?php echo $dados['assunto'];?></td>
                     <td><?php echo $dados['status_chamado'];?></td>
                     <td><?php echo date('d/m/Y', strtotime($dados['data_solicitacao']));?></td>
+                    <td style="display:none;"><?php echo $dados['user'];?></td>
+                    <td style="display:none;"><?php echo $dados['email'];?></td>
+                    <td style="display:none;"><?php echo $dados['mensagem'];?></td>
                     </tr>
                     <?php } ?>
-            </table>
+            </table>     
+        </div>    
+</section>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
             
-        </div>
+            <script>
+            function editar(e) {
+            var linha = $(e).closest("tr");
+            var id = linha.find("td:eq(0)").text().trim();
+            var provedor = linha.find("td:eq(2)").text().trim();
+            var solicitante = linha.find("td:eq(3)").text().trim();
+            var protocolo = linha.find("td:eq(4)").text().trim();
+            var prioridade = linha.find("td:eq(5)").text().trim();
+            var assunto = linha.find("td:eq(6)").text().trim();
+            var status = linha.find("td:eq(7)").text().trim();
+            var data = linha.find("td:eq(8)").text().trim();
+            var email = linha.find("td:eq(10)").text().trim();
+            var mensagem = linha.find("td:eq(11)").text().trim();
+            
+            $("#modalId").val(id);    
+            $("#view_provedor").val(provedor);
+            $("#view_solicitante").val(solicitante);
+            $("#view_protocolo").val(protocolo);
+            $("#view_prioridade").val(prioridade);
+            $("#view_assunto").val(assunto);
+            $("#view_status").val(status);
+            $("#view_data").val(data);
+            $("#view_email").val(email);
+            $("#view_mensagem").val(mensagem);
+            }
+</script>
+/
+<section>
+<div class="container">
+<h1 class="titulo"></h1>
+</div>
 </section>
 
 <footer>
@@ -153,21 +185,6 @@ $user_check=$_SESSION['usuarioUser'];
         </div>
         </div>
 </footer>
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-            
-            <script>
-            function editar(e) {
-            var linha = $(e).closest("tr");
-            var id = linha.find("td:eq(0)").text().trim();
-            var provedor = linha.find("td:eq(2)").text().trim();
-            var solicitante = linha.find("td:eq(3)").text().trim(); 
-        
-            $("#modalId").val(id);    
-            $("#view_provedor").val(provedor);
-            $("#view_solicitante").val(solicitante);
-            }
-</script>
 
 </body>
 </html>
