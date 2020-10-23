@@ -108,7 +108,7 @@ $user_check=$_SESSION['usuarioUser'];
                 <table class="grid-16 tabela">
                   
                     <tr>
-                    <th>Detalhes</th>
+                    <th>Detalhamento</th>
                     <th>Provedor</th>
                     <th>Responsavel</th>
                     <th>Protocolo</th> 
