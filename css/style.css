@@ -477,11 +477,11 @@ label {
 
 table tr:nth-child(even) {
   background: #DEDEDE;
-  border: 1px solid #2D4F8D;
+  border: 2px solid #2D4F8D;
 }
 
 table tr:nth-child(odd) {
-  border: 1px solid #2D4F8D;
+  border: 2px solid #2D4F8D;
 }
 
 .color1 {

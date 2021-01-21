@@ -18,7 +18,6 @@ margin-top: 60px;
         background-color: $cinza-escuro;
         color: $cinza-claro;
         
-        
     }
     td {
         border: 2px 1px 2px 2px solid $cinza-escuro;
@@ -32,16 +31,14 @@ margin-top: 60px;
     }
 }
 
-
 table {
     tr:nth-child(even) {
         background: $cinza-medio;
-        border: 1px solid $cinza-escuro;
+        border: 2px solid $cinza-escuro;
         
     }
         tr:nth-child(odd) {
-            border: 1px solid $cinza-escuro;
+            border: 2px solid $cinza-escuro;
             
         }
-    
 }

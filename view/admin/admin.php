@@ -112,13 +112,7 @@ include ("../../controller/verifica_admin.php");
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-        <div class="grid-16 footer_texto">
-            <h1>Copyright © Cybernet Provedor 2020</h1>
-        </div>
-        </div>
-    </footer>
+    
 
 </body>
 </html>

@@ -106,9 +106,7 @@ $user_check=$_SESSION['usuarioUser'];
                 <table class="grid-16 tabela">
                   
                     <tr>
-                    <th>Detalhamento</th>
-                    <th>Provedor</th>
-                    <th>Responsavel</th>
+                    <th>Descrição</th>
                     <th>Protocolo</th> 
                     <th>Prioridade</th>
                     <th>Assunto</th>
@@ -125,9 +123,9 @@ $user_check=$_SESSION['usuarioUser'];
                     
                     <tr>
                     <td style="display:none;"><?php echo $dados['cod'];?></td>
-                    <td><i class="<?php echo date('dmY', strtotime($dados['data_solicitacao']))?><?php echo $dados['cod'];?>" onclick="editar(this)"><p><a href="#modal" class="btn_modal"><img src="../../img/eye.png" alt=""></a></p></i></td>
-                    <td><?php echo $dados['provedor'];?></td>
-                    <td><?php echo $dados['responsavel'];?></td>
+                    <td><i class="<?php echo date('dmY', strtotime($dados['data_solicitacao']))?><?php echo $dados['cod'];?>" onclick="editar(this)"><p><a href="#modal" class="btn_modal"><img src="../../img/desc.png" alt=""></a></p></i></td>
+                    <td style="display:none;"><?php echo $dados['provedor'];?></td>
+                    <td style="display:none;"><?php echo $dados['responsavel'];?></td>
                     <td><?php echo date('dmY', strtotime($dados['data_solicitacao']))?>-<?php echo $dados['cod'];?></td>
                     <td><?php echo $dados['prioridade'];?></td>
                     <td><?php echo $dados['assunto'];?></td>
