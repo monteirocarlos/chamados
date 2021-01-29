@@ -93,22 +93,7 @@ $user_check=$_SESSION['usuarioUser'];
 
             <div class="grid-16 form_ind">
             <label for="fname">Mensagem:</label><br>    
-            <input type="text" name="view_mensagem" id="view_mensagem">
-            </div>
-
-            <div class="grid-16 form_ind">
-            <label for="fname">Mensagem:</label><br>    
-            <input type="text" name="view_mensagem" id="view_mensagem">
-            </div>
-
-            <div class="grid-16 form_ind">
-            <label for="fname">Mensagem:</label><br>    
-            <input type="text" name="view_mensagem" id="view_mensagem">
-            </div>
-
-            <div class="grid-16 form_ind">
-            <label for="fname">Mensagem:</label><br>    
-            <input type="text" name="view_mensagem" id="view_mensagem">
+            <textarea type="text" name="view_mensagem" id="view_mensagem"></textarea>
             </div>
 
            </form>

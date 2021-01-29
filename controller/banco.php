@@ -1,9 +1,9 @@
 <?php
 
-$servidor = '10.101.0.6';
-$porta = '33060';
+$servidor = 'localhost';
+$porta = '3306';
 $usuario = 'root';
-$senha = '@4795.cyb,';
+$senha = 'root';
 $banco = 'chamados';
 
 // Conecta-se ao banco de dados MySQL

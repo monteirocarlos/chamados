@@ -54,7 +54,7 @@ $user_check = $_SESSION['usuarioUser'];
                             join tb_usuarios as B on provedor = b.empresa
                             where usuario = '$user_check'";
                             $con = $mysqli->query($lista_colaboradores) or die ($mysqli->error);
-                            while($dados = $con->fetch_array()){ ?> 
+                            while($dados = $con->fetch_array()){ ?>
                     
                     <form method="POST" action="../../controller/edita_perfil.php">   
                             
